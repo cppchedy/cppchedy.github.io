@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Smart keyless</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,183 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Smart Keyless Project with Blockchain</h3>
+					<p>
+						<small>Presented by Najjar Chedy</small>
+					</p>
+				</section>
+				<section>
+					<h3>Overview</h3>
+					<p>
+						<ol>
+							<li>Smart keyless</li>
+							<li>Data Model</li>
+							<li>Blockchain 101</li>
+							<li>Ordinary Database vs blockchain</li>
+								<ul>
+									<li>why blockchain over DBs?</li>
+									<li>Blockchain Platforms</li>
+								</ul>
+							<li>Security & other technical issues</li>
+							<li>Conclusion</li>
+						</ol>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h3>Smart Keyless system</h3>
+					</section>
+					<section>
+						<h3>Components of the system</h3>
+						<p>
+							The Smart Keyless system is essentially composed of:
+							<ul>
+								<li>locker device</li>
+								<li>users smart phone</li>
+								<li>backend of the system</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h6>Architecture of the System</h6>
+						<img src="archskl.png" alt="architecture smart keyless" height="520px" />
+					</section>
+					<section>
+							<p>
+								Key point of the previous figure:
+								<br>
+								<ul>
+									<li class="fragment fade-up">locker & smart phones communicate over BLE</li>
+									<li class="fragment fade-up">locker communicate with backend through IoT</li>
+								</ul>
+							</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Data Model</h3>
+					</section>
+					<section>
+						<h3>Initial Data Model</h3>
+						<img src="" alt="Data Model" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Blockchain intro</h3>
+					</section>
+					<section>
+						<h3><i>Definition</i></h3>
+						<p>
+								Blockchain is a distributed shared ledger. Blockchain can be considered a shared
+								ledger of transactions. The transaction are ordered and grouped into blocks.
+						</p>
+					</section>
+					<section>
+						<h3>Blockchain(or DLTs) fundamental components</h3>
+						<ul>
+							<li>Datastrucuture</li>
+							<li>Consensus</li>
+							<li>P2P network</li>
+							<li>Transactions</li>
+							<li>Smart Constracts</li>
+							<li>Cryptography</li>
+							<li>...</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Database Vs	Blockchain</h3>
+					</section>
+					<section>
+						<h3>Blockchain... But why?</h3>
+						<p>
+							why a Blockchain based approach is favorable over a Database one?
+						</p>
+					</section>
+					<section>
+						<h3>Platforms for Blockchain Products</h3>
+						<p>
+							These are the platforms available for a developing Blockchain-based solution:
+							<ul>
+								<li class="fragment fade-up">Hyperledger Project(fabric, sawtooth,..)</li>
+								<li class="fragment fade-up">MultiChain</li>
+								<li class="fragment fade-up">BigChain</li>
+								<li class="fragment fade-up">Etherium</li>
+								<li class="fragment fade-up">openChain</li>
+								<li class="fragment fade-up">HydraChain</li>
+								<li class="fragment fade-up">IBM Blockchain</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h3>Hyperledger project Services</h3>
+						
+						<img src="archHyp.jpg" alt="Services of the Hyperledger">
+					</section>
+					<section>
+						<h3>High-level Overview of Hyperledger Fabric </h3>
+						<img src="archHypFab.png" alt="Services of the Hyperledger">
+					</section>
+					<!--<section>
+						<h3>Key Takeaway for Hyperledger sawtooth</h3>
+						<img src="tabcomp2.png" alt="most important point of the platforms">
+					</section>-->
+					<section>
+						<h3>Mutlichain</h3>
+						<p>
+							Mutlichain is an open source platform build	in the beginning for high speed financial Transaction and added
+							the support of non-finacial use case.
+						</p>
+					</section>
+					<section>
+						<img src="tabcomp1.png" alt="most important points of the platforms">
+					</section>
+					<section>
+						<h3>Bigchain</h3>
+						<p>
+							Bigchain is a database that has integrated blockchain properties.
+							<img src="bigChProp.png" alt="bigchain properties" />
+						</p>
+					</section>
+					<section>
+						<h3>Example of Bigchain node configuration</h3>
+						<img src="bigChComm.png" alt="communication between bigchain nodes"/>
+					</section>
+					<section>
+						<h3><a href="bigchaindb-whitepaper.pdf">Bigchain whitepaper</a></h3>
+					</section>
+					<section>
+						<h3>Comparing platforms</h3>
+						<p>
+							Criteria for platform evaluation:
+							<ul>
+								<li class="fragment fade-up">Popularity - implies robustness, trust in the platform, reliability</li>
+								<li class="fragment fade-up">Price & license</li>
+								<li class="fragment fade-up">Ease of use</li>
+								<li class="fragment fade-up">Supported Programming language</li>
+								<li class="fragment fade-up">features of the system</li>
+								<li class="fragment fade-up">company developping and maintainging the platform</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Security and other problems</h3>
+					</section>
+					<section>
+						<p>
+							
+						</p>
+					</section>
+				</section>
+				<section>
+						<h3>Conclusion</h3>
+				</section>
 			</div>
 		</div>
 
