@@ -66,16 +66,6 @@
 						<h6>Architecture of the System</h6>
 						<img src="archskl.png" alt="architecture smart keyless" height="520px" />
 					</section>
-					<section>
-							<p>
-								Key point of the previous figure:
-								<br>
-								<ul>
-									<li class="fragment fade-up">locker & smart phones communicate over BLE</li>
-									<li class="fragment fade-up">locker communicate with backend through IoT</li>
-								</ul>
-							</p>
-					</section>
 				</section>
 				<section>
 					<section>
@@ -83,7 +73,39 @@
 					</section>
 					<section>
 						<h3>Initial Data Model</h3>
-						<img src="" alt="Data Model" />
+						<p>
+							Fundamental Entities of the system :
+							<ul>
+								<li>Device</li>
+								<li>Permission</li>
+								<li>User</li>
+								<li>Account</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h3>Questions still missing a proper answer</h3>
+						Open questions:
+						<ul>
+							<li>what are the possible types of account a user can have?</li>
+							<li>do we handle account type as different entity?</li>
+							<li>do we store Data onchain or offchain?</li>
+							<li>what are the format of msg to use?</li>
+						</ul>
+					</section>
+					<section>
+						<h3> APIs specification</h3>
+						<p>
+							Queries & function the system must support:
+							<ol>
+								<li>get list of permission for a particular locker</li>
+								<li>get list of active permission/token for an accessor</li>
+								<li>post a permission for an account</li>
+								<li>add a new account</li>
+								<li>add a new locker</li>
+								<li>...</li>
+							</ol>
+						</p>
 					</section>
 				</section>
 				<section>
@@ -98,7 +120,10 @@
 						</p>
 					</section>
 					<section>
-						<h3>Blockchain(or DLTs) fundamental components</h3>
+							<h3><a href="https://anders.com/blockchain/hash.html">Demo</a></h3>
+					</section>
+					<section>
+						<h3>Blockchain fundamental components</h3>
 						<ul>
 							<li>Datastrucuture</li>
 							<li>Consensus</li>
@@ -118,7 +143,13 @@
 					<section>
 						<h3>Blockchain... But why?</h3>
 						<p>
-							why a Blockchain based approach is favorable over a Database one?
+							why a Blockchain based approach is favorable over a Database approach?
+							<ul>
+								<li>security</li>
+								<li>Privacy & confidentiality</li>
+								<li>Traceability & Accountability</li>
+								<li>Byzantine fault tolerance</li>
+							</ul>
 						</p>
 					</section>
 					<section>
@@ -149,7 +180,7 @@
 						<h3>Key Takeaway for Hyperledger sawtooth</h3>
 						<img src="tabcomp2.png" alt="most important point of the platforms">
 					</section>-->
-					<section>
+					<!--<section>
 						<h3>Mutlichain</h3>
 						<p>
 							Mutlichain is an open source platform build	in the beginning for high speed financial Transaction and added
@@ -158,7 +189,7 @@
 					</section>
 					<section>
 						<img src="tabcomp1.png" alt="most important points of the platforms">
-					</section>
+					</section>-->
 					<section>
 						<h3>Bigchain</h3>
 						<p>
@@ -194,7 +225,10 @@
 					</section>
 					<section>
 						<p>
-							
+							<ul>
+								<li>private key tied to a sinlge phone</li>
+								<li>changing ownership</li>
+							</ul>
 						</p>
 					</section>
 				</section>
